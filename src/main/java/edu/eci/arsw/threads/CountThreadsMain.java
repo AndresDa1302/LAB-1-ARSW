@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package edu.eci.arsw.threads;
-
 /**
  *
  * @author hcadavid
@@ -12,7 +11,8 @@ package edu.eci.arsw.threads;
 public class CountThreadsMain {
     
     public static void main(String a[]){
-        
+        Thread t= new Thread (new CountThread(5,10));
+        t.start();
     }
     
 }
