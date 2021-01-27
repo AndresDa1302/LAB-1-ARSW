@@ -61,16 +61,16 @@ Para 'refactorizar' este código, y hacer que explote la capacidad multi-núcleo
 ii.
 1 Agregamos una nueva clase de tipo thread que calculara el numero de ocurrencias de un host en un numero determinado de servidores además del numero de servidores que tubo que revisar.
 
-![](img/Captura1.png)
-![](img/Captura2.png)
-![](img/Captura3.png)
+![](img/Captura1.PNG)
+![](img/Captura2.PNG)
+![](img/Captura3.PNG)
 2 Modificamos el método checkHost agregando un nuevo parámetro que recibirá el numero de Threads a crear
 
-![](img/Captura4.png)
+![](img/Captura4.PNG)
 
 Tambien modificamos el cuerpo del mismo método creando los threads para que puedan correr luego capturamos la información que nos proporcionan estos para poder mostrar el numero de concurrencias y el numero de hosts revisados.
 
-![](img/Captura5.png)
+![](img/Captura5.PNG)
 
 **Parte II.I Para discutir la próxima clase (NO para implementar aún)**
 
@@ -114,20 +114,20 @@ Como anteriormente se discutia se puede evidenciar que no habria una mejora al m
 
 iii
 Un solo hilo
-![](img/Captura6.png)
+![](img/Captura6.PNG)
 
 4 hilos
-![](img/Captura7.png)
+![](img/Captura7.PNG)
 
 8 hilos
-![](img/Captura8.png)
+![](img/Captura8.PNG)
 
 50 hilos
-![](img/Captura9.png)
+![](img/Captura9.PNG)
 
 100 hilos
 
-![](img/Captura2.png)
+![](img/Captura10.PNG)
 
 
 
