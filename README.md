@@ -94,10 +94,22 @@ Con lo anterior, y con los tiempos de ejecución dados, haga una gráfica de tie
 1. Según la [ley de Amdahls](https://www.pugetsystems.com/labs/articles/Estimating-CPU-Performance-using-Amdahls-Law-619/#WhatisAmdahlsLaw?):
 
 	![](img/ahmdahls.png), donde _S(n)_ es el mejoramiento teórico del desempeño, _P_ la fracción paralelizable del algoritmo, y _n_ el número de hilos, a mayor _n_, mayor debería ser dicha mejora. Por qué el mejor desempeño no se logra con los 500 hilos?, cómo se compara este desempeño cuando se usan 200?. 
+	
+El procesador como tal puede tener varios hilos corriendo pero no puede tener demaciados
+por que basicamente estos quedan en una cola o tambien se pueden intercalar con otros,
+sabiendo esto,  tener ejecutandose 200 hilos es como tener 500, debido al poder de computo y no tiene tanta capacidad para procesarlos a la vez.
 
 2. Cómo se comporta la solución usando tantos hilos de procesamiento como núcleos comparado con el resultado de usar el doble de éste?.
 
+Se puede evidenciar una gran mejora por ejemplo para el caso de 4 hilos, al programa le tomaba 1:30 min aproximadamente en ejecutarse, luego para el caso de 8 hilos este tiempo se redujo mas del doble del anterior.
+
 3. De acuerdo con lo anterior, si para este problema en lugar de 100 hilos en una sola CPU se pudiera usar 1 hilo en cada una de 100 máquinas hipotéticas, la ley de Amdahls se aplicaría mejor?. Si en lugar de esto se usaran c hilos en 100/c máquinas distribuidas (siendo c es el número de núcleos de dichas máquinas), se mejoraría?. Explique su respuesta.
+
+Si se utilizan roscas x en lugar de máquinas distribuidas 100/x (donde x es el número de núcleos de estas máquinas), ¿se mejoraría? Explica tu respuesta.
+
+Como anteriormente se discutia se puede evidenciar que no habria una mejora al momento de ejecutar el programa y en cambio si se estaria consumiendo muchos mas recursos fisicos que relentizarlo.
+
+
 
 iii
 Un solo hilo
